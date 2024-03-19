@@ -1,3 +1,5 @@
+// let byedefoult = 'iphone'
+
 const loadPhone = async (searchText, isShowAll) => {
     const rec = await fetch(`https://openapi.programming-hero.com/api/phones?search=${searchText}`)
     const data = await rec.json()
@@ -92,5 +94,5 @@ const handelShowAll = () => {
 }
 
 
-
-loadPhone()
+// displayPhone()
+loadPhone("iphon")
